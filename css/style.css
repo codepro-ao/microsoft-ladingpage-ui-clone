@@ -77,10 +77,11 @@ ul{
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
-    justify-content: flex-end;
+    justify-content: center;
     padding-bottom: 50px;
+    padding-left: 50px;
     margin-bottom: 20px;
 }
 .showcase h2, .showcase p{
@@ -232,8 +233,30 @@ ul{
 .footer div i{
     margin-right: 10px;
 }
-
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    z-index: 2;
+    display: none;
+}
 @media(max-width:768px){
+    .showcase{
+        width: 100%;
+        height: 400px;
+        background: url('../img/RE3NR20.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 50px;
+        margin-bottom: 20px;
+    }
     .home-cards{
         grid-template-columns: repeat(2,1fr);
     }
@@ -253,14 +276,7 @@ ul{
         grid-template-columns: repeat(2,1fr);
     }
 }
-.menu-btn{
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    z-index: 2;
-    display: none;
-}
+
 @media(max-width:500px){
     .home-cards{
         grid-template-columns: 1fr;
@@ -294,6 +310,7 @@ ul{
         opacity: 0.9;
         padding: 30px;
         transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
     }
     .main-nav ul.main-menu li{
         padding: 10px;
