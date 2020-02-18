@@ -20,7 +20,7 @@ ul{
 }
 .container{
    width: 98%;
-   max-width: 1100px;
+   max-width: 1230px;
    margin: auto;  
 }
 
@@ -71,14 +71,14 @@ ul{
 .showcase{
     width: 100%;
     height: 400px;
-    background: url('../img/RE3NR20.jpg');
+    background: url('../img/RE4pPgw.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     padding-bottom: 50px;
     padding-left: 50px;
@@ -86,6 +86,7 @@ ul{
 }
 .showcase h2, .showcase p{
     margin-bottom: 10px;
+    max-width: 340px;
 }
 
 .showcase  .btn{
@@ -186,7 +187,7 @@ ul{
 }
 
 .links-inner{
-    max-width: 1100px;
+    max-width: 1230px;
     margin: 0 auto;
     padding: 0 28px;
     display: grid;
@@ -201,14 +202,14 @@ ul{
 }
 
 .footer{
-    background: #f4f4f4;
+    background: #fafafa;
     color: #616161;
     font-size: 12px;
     padding: 20px 0;
 }
 
 .footer-inner{
-    max-width: 1100px;
+    max-width: 1230px;
     margin:0 auto;
     padding: 0 auto;
     display: flex;
@@ -218,16 +219,16 @@ ul{
 
 .footer ul{
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
 }
 .footer div{
-    margin-bottom: 20px;
     display:flex;
     align-items: center;
+    margin-right: 10px;
 }
 .footer li{
     margin-right: 30px;
-    margin-bottom: 20px;
 }
 
 .footer div i{
@@ -240,6 +241,15 @@ ul{
     right: 5px;
     z-index: 2;
     display: none;
+}
+ 
+@media(max-width:1080px){
+    .home-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .links .links-inner{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 @media(max-width:768px){
     .showcase{
@@ -257,9 +267,7 @@ ul{
         padding-bottom: 50px;
         margin-bottom: 20px;
     }
-    .home-cards{
-        grid-template-columns: repeat(2,1fr);
-    }
+   
     .xbox .content p{
         display: none;
     }
@@ -274,6 +282,9 @@ ul{
 
     .links .links-inner{
         grid-template-columns: repeat(2,1fr);
+    }
+    .footer-inner{
+        padding: 0 28px;
     }
 }
 
