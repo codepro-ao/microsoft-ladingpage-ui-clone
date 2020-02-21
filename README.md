@@ -43,9 +43,9 @@ This Project is a UI clone of Microsoft Ladingpage.
 [Preview](https://microsoft-ladingpage-ui-clone.netlify.com/)
 
 ### Layout Mobile
-![Layout](LayoutMobile.PNG)
+![LayoutMobile](LayoutMobile.PNG)
 ### Layout Desktop
-![Layout](LayoutDescktop.PNG)
+![LayoutDescktop](LayoutDescktop.PNG)
 
 ## 🤔 How to Contribute
 
